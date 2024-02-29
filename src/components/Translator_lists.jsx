@@ -66,7 +66,6 @@ function Translator_lists() {
                 <p className='text-[2rem]'>{data.icon}</p>
                 <img src={data.Laos_flag} alt="" className='w-14 h-14 rounded-full' />
               </div>
-              <div className="radial-progress text-primary" style={{ "--value": 70 }} role="progressbar">70%</div>
             </div>
           </Link>
         ))}
