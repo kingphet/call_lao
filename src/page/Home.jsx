@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../public/images/callLao_default_logo.png'
 import Nav from '../layout/Nav'
 import { Link } from 'react-router-dom'
+import NavUser from '../layout/NavUser'
 
 
 function Home() {
