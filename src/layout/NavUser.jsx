@@ -30,11 +30,11 @@ const data = [
 function NavUser() {
   return (
     <>
-      <div className="bg-[#0F2484] p-6 grid grid-cols-6">
+      <div className="bg-[#0F2484] grid-cols-2 p-6 grid lg:grid-cols-6">
         <div className="text-white text-4xl cursor-pointer flex items-center">
           <FaBars />
         </div>
-        <div className="flex items-center justify-around col-span-4">
+        <div className="lg:flex items-center justify-around col-span-4 hidden ">
           {data.map((data) => (
             <Link to={data.path}>
             <div className="text-white flex flex-col items-center hover:flex">

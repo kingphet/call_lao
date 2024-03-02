@@ -8,8 +8,8 @@ import Translator_lists from '../components/Translator_lists';
 
 const select_style = 
 [
-  'w-[25%] h-14 rounded-3xl bg-[#b7c05813] flex items-center justify-center gap-4 shadow-lg',
-  'text-[1.5rem] bg-[#b7c05800]',
+  'px-8 lg:w-[25%] h-14 rounded-3xl bg-[#b7c05813] flex items-center justify-center gap-4 shadow-lg',
+  'lg:text-[1.5rem] bg-[#b7c05800]',
   'w-8 h-8 rounded-full'
 ]
 

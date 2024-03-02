@@ -12,9 +12,9 @@ function Profile() {
         <>
             <NavUser />
             <div className="flex justify-center py-10">
-                <div className="w-[60%] h-auto bg-[#b7c05813] rounded-3xl shadow-2xl pt-10">
+                <div className="w-[90%] lg:w-[60%] h-auto bg-[#b7c05813] rounded-3xl shadow-2xl pt-10">
                     <div className="flex flex-col items-center gap-8 text-[2rem]">
-                        <img src={Elon_musk} alt="" className='w-52 h-52 rounded-full' />
+                        <img src={Elon_musk} alt="" className='w-28 h-28 lg:w-52 lg:h-52 rounded-full' />
                         <p>Name</p>
                     </div>
                     <div className="flex items-center justify-center gap-12 text-[1.4rem] pt-8">
@@ -26,7 +26,7 @@ function Profile() {
                         <p className='text-[#0F2484]'><FaStar /></p>
                         <p>4.5</p>
                     </div>
-                    <div className="flex justify-center pb-10 gap-10">
+                    <div className="flex flex-col lg:flex-row justify-center pb-10 gap-10 px-20">
                         <button className='text-[1.5rem] py-2 px-16 bg-white border-2 border-black rounded-3xl'>Translate</button>
                         <button className='text-[1.5rem] py-2 px-16 bg-white border-2 border-black rounded-3xl'>Chat</button>
                     </div>

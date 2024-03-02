@@ -8,7 +8,7 @@ function SignIn() {
     <div>
       <Nav />
       <div className="w-full h-screen flex flex-col items-center justify-center">
-        <div className="w-auto h-auto p-20 shadow-[20px_30px_40px_10px_rgba(0,0,0,0.3)] pt-0">
+        <div className="w-auto h-auto p-20 lg:shadow-[20px_30px_40px_10px_rgba(0,0,0,0.3)] pt-0">
           <div className="flex items-center justify-center py-9">
             <p className='text-[3rem] font-bold text-[#EB993D]'>Sign</p>
             <p className='text-[3rem] font-bold text-[#0F2484]'>Up</p>
@@ -16,11 +16,11 @@ function SignIn() {
           <div className="flex flex-col gap-5">
             <div>
               <p>Name</p>
-              <input type="text" placeholder='Enter your name' className='w-96 h-12 border-2 border-[#0F2484] rounded-3xl pl-3 ' />
+              <input type="text" placeholder='Enter your name' className='w-96 h-12 md:w-[30rem] border-2 border-[#0F2484] rounded-3xl pl-3 ' />
             </div>
             <div>
               <p>E-mail</p>
-              <input type="email" placeholder='Enter your email' className='w-96 h-12 border-2 border-[#0F2484] rounded-3xl pl-3 ' />
+              <input type="email" placeholder='Enter your email' className='w-96 h-12 md:w-[30rem] border-2 border-[#0F2484] rounded-3xl pl-3 ' />
             </div>
             <div>
               <p>Password</p>

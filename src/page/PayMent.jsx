@@ -30,59 +30,59 @@ function PayMent() {
   return (
     <>
       <div className="w-full h-full bg-[#0F2484]">
-        <div className="flex items-center justify-between py-10 px-8">
-          <div className="text-white text-[3rem]">
+        <div className="flex items-center justify-between py-6 px-8">
+          <div className="text-white text-[2rem] lg:text-[3rem]">
             <p><IoArrowBack /></p>
           </div>
-          <div className="text-white font-bold text-[2.5rem]">
+          <div className="text-white font-bold text-[1.5rem] tracking-wider lg:text-[2.5rem]">
             <p>Payment</p>
           </div>
-          <div className="text-[#FBBC05] p-0.2 border-4 border-[#FBBC05] rounded-full text-[3.5rem]">
+          <div className="text-[#FBBC05] p-0.2 border-2 lg:border-4 border-[#FBBC05] rounded-full text-[1.5rem] lg:text-[3.5rem] shadow-[#00000044] shadow-md">
             <p><CiDollar /></p>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center text-white text-5xl font-bold">
-          <img src={logo} alt="" className='w-[20%]' />
-          <p>CalLaos Translator</p>
+          <img src={logo} alt="" className='w-[30%] lg:w-[20%]' />
+          <p className='hidden lg:block'>CalLaos Translator</p>
         </div>
         <div className="flex justify-center py-14">
-          <div className="h-full w-[70%] bg-white rounded-[6.3rem]">
-            <div className="flex justify-center items-center gap-32 py-10">
+          <div className="h-full w-full lg:w-[70%] bg-white rounded-[3rem] lg:rounded-[6.3rem]">
+            <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8 lg:gap-32 py-10 pl-14">
               <div className="flex items-center gap-4">
-                <img src={Laos_flag} alt="" className='w-12 h-12 rounded-full' />
-                <button className='bg-[#D9D9D9] py-2 px-14 rounded-2xl font-bold text-xl'>KIP</button>
+                <img src={Laos_flag} alt="" className='w-7 h-7 lg:w-12 lg:h-12 rounded-full' />
+                <button className='bg-[#D9D9D9] py-1 px-12 lg:py-2 lg:px-14 rounded-full lg:rounded-2xl font-bold lg:text-xl'>KIP</button>
               </div>
               <div className="flex items-center gap-4">
-                <img src={America_flag} alt="" className='w-12 h-12 rounded-full' />
-                <button className='bg-[#D9D9D9] py-2 px-14 rounded-2xl font-bold text-xl'>USD</button>
+                <img src={America_flag} alt="" className='w-7 h-7 lg:w-12 lg:h-12 rounded-full' />
+                <button className='bg-[#D9D9D9] py-1 px-12 lg:py-2 lg:px-14 rounded-full lg:rounded-2xl font-bold lg:text-xl'>USD</button>
               </div>
             </div>
             <div className="flex justify-center py-10">
-              <div className="flex flex-col items-center gap-7">
-                <img src={QrCode} alt="" />
-                <img src={BarCode} alt="" />
-                <p className='text-2xl'>+628749744435</p>
+              <div className="flex flex-col items-center gap-7 ">
+                <img src={QrCode} alt="" className='lg:w-full w-40'/>
+                <img src={BarCode} alt="" className='lg:w-full w-48'/>
+                <p className=' lg:text-2xl'>+628749744435</p>
               </div>
             </div>
-            <div className="text-[#0000008f] text-2xl pl-28">
+            <div className="text-[#0000008f] text-xl pl-10 lg:text-2xl lg:pl-28">
               <p>Other Payment</p>
             </div>
-            <div className="flex flex-col pl-36 py-5 gap-5">
+            <div className="flex flex-col pl-16 lg:pl-36 py-5 gap-5">
               {data.map((data) => (
-                <div className="flex items-center gap-5 text-xl text-[#0000008d]">
-                  <img src={data.icons} alt="" className='w-12' />
+                <div className="flex items-center gap-5 lg:text-xl text-[#0000008d]">
+                  <img src={data.icons} alt="" className='w-8 lg:w-12' />
                   <p>{data.name}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-[#C3A356] rounded-full flex items-center justify-around py-14">
-              <div className="bg-white px-20 py-7 text-[#0F2484] font-bold text-3xl flex items-center gap-10 rounded-full shadow-[#00000085] shadow-lg">
+            <div className="bg-[#C3A356] rounded-[3rem] lg:rounded-full flex items-center justify-around py-7 lg:py-14">
+              <div className="bg-white px-8 py-4 lg:px-20 lg:py-7 text-[#0F2484] font-bold text-xl lg:text-3xl flex items-center gap-8 lg:gap-10 rounded-full shadow-[#00000085] shadow-lg cursor-pointer">
                 <p>Pay</p>
                 <p><FaArrowRight/></p>
               </div>
               <div className="text-white font-bold flex flex-col items-end">
-                <p className='text-3xl'>Totel</p>
-                <p className='text-4xl'>500$</p>
+                <p className='text-sm lg:text-3xl'>Totel</p>
+                <p className='text-xl lg:text-4xl'>500$</p>
               </div>
             </div>
           </div>

@@ -10,8 +10,8 @@ function Nav() {
               <FaBars/>
             </div>
             <div className="flex items-center gap-5 ">
-              <img src={Logo} alt="" className='w-14'/>
-              <p className='text-white text-[1.5rem] border-l-2 border-white pl-5 '>CalLaos Translator</p>
+              <img src={Logo} alt="" className='w-10 sm:w-14 md:w-16 lg:w-20'/>
+              <p className='text-white text-[1.2rem] sm:text-[1.5rem] lg:text-[1.8rem] border-l-2 border-white pl-5 '>CalLaos Translator</p>
             </div>
       </div>
     </>
