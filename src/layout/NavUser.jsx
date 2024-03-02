@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FaBars } from "react-icons/fa";
 import Logo from '../../public/images/callLao_logo_stoke.png'
 import { MdHomeFilled } from "react-icons/md";
@@ -27,6 +27,12 @@ const data = [
   },
 ]
 
+// const [MenuOpen, setMenuOpen] = useState(false);
+
+// const sideMunu = () => {
+//   setMenuOpen(!MenuOpen)
+// }
+
 function NavUser() {
   return (
     <>
@@ -49,6 +55,19 @@ function NavUser() {
           <img src={Logo} alt="" className='w-14' />
           <p className='text-white text-[1.5rem] border-l-2 border-white pl-5 '>CalLaos Translator</p>
         </div>
+        {/* {MenuOpen ? (
+          <div className="lg:hidden flex flex-col items-center">
+          {data.map((data) => (
+              <Link to={data.path}>
+              <div className="text-white flex flex-col items-center hover:flex">
+                <p className='text-[2rem]'>{data.icon}</p>
+                <p className=''>{data.info}</p>
+                <div className="w-full h-1 bg-white rounded-2xl hidden"></div>
+              </div>
+              </Link>
+            ))}
+          </div>
+        ) : null} */}
       </div>
     </>
   )

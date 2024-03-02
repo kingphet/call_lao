@@ -24,7 +24,7 @@ function SignIn() {
             </div>
             <div>
               <p>Password</p>
-              <input type="password" placeholder='Enter your password' className='w-96 h-12 border-2 border-[#0F2484] rounded-3xl pl-3 ' />
+              <input type="password" placeholder='Enter your password' className='w-96 h-12 md:w-[30rem] border-2 border-[#0F2484] rounded-3xl pl-3 ' />
             </div>
           </div>
           <div className="flex gap-1 py-5">
