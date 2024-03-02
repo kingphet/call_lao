@@ -45,7 +45,7 @@ function PayMent() {
           <img src={logo} alt="" className='w-[30%] lg:w-[20%]' />
           <p className='hidden lg:block'>CalLaos Translator</p>
         </div>
-        <div className="flex justify-center py-14">
+        <div className="flex justify-center lg:py-14">
           <div className="h-full w-full lg:w-[70%] bg-white rounded-[3rem] lg:rounded-[6.3rem]">
             <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8 lg:gap-32 py-10 pl-14">
               <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ function PayMent() {
                 </div>
               ))}
             </div>
-            <div className="bg-[#C3A356] rounded-[3rem] lg:rounded-full flex items-center justify-around py-7 lg:py-14">
+            <div className="bg-[#C3A356] rounded-tl-[3rem] rounded-tr-[3rem] lg:rounded-full flex items-center justify-around py-7 lg:py-14">
               <div className="bg-white px-8 py-4 lg:px-20 lg:py-7 text-[#0F2484] font-bold text-xl lg:text-3xl flex items-center gap-8 lg:gap-10 rounded-full shadow-[#00000085] shadow-lg cursor-pointer">
                 <p>Pay</p>
                 <p><FaArrowRight/></p>
