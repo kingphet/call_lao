@@ -10,7 +10,7 @@ function Home() {
         <>
         <Nav />
             <div className="flex justify-center">
-                <div className="flex items-center justify-around w-full">
+                <div className="flex items-center justify-around w-full px-8">
                     <div className="flex flex-col gap-16">
                         <div className="text-center text-[4rem] sm:text-[5.7rem] lg:text-[8rem] font-bold">
                             <p className='text-[#0F2484]'>CallLao</p>

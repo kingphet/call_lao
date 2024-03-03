@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { FaBars } from "react-icons/fa";
 import Logo from '../../public/images/callLao_logo_stoke.png'
 import { MdHomeFilled } from "react-icons/md";
@@ -27,20 +28,26 @@ const data = [
   },
 ]
 
-// const [MenuOpen, setMenuOpen] = useState(false);
-
-// const sideMunu = () => {
-//   setMenuOpen(!MenuOpen)
-// }
 
 function NavUser() {
+    const [MenuOpen, setMenuOpen] = useState(false)
+    const [ChangeIcon, setChangeIcon] = useState(false)
+    
+    const sideMunu = () => {
+      setMenuOpen(!MenuOpen)
+    }
+
+    const Changeit = () => {
+      ChangeIcon(!setChangeIcon)
+    }
+
   return (
     <>
-      <div className="bg-[#0F2484] grid-cols-2 p-6 grid lg:grid-cols-6">
-        <div className="text-white text-4xl cursor-pointer flex items-center">
+      <div className="bg-[#0F2484] grid-cols-2 py-4 px-6 grid lg:grid-cols-5">
+        <div className="text-white text-4xl cursor-pointer flex lg:hidden items-center" onClick={sideMunu}>
           <FaBars />
         </div>
-        <div className="lg:flex items-center justify-around col-span-4 hidden ">
+        <div className="lg:flex items-center justify-around col-span-3 hidden ">
           {data.map((data) => (
             <Link to={data.path}>
             <div className="text-white flex flex-col items-center hover:flex">
@@ -51,24 +58,24 @@ function NavUser() {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-5 justify-end">
+        <div className="flex items-center gap-5 justify-end lg:col-span-2">
           <img src={Logo} alt="" className='w-14' />
           <p className='text-white text-[1.5rem] border-l-2 border-white pl-5 '>CalLaos Translator</p>
         </div>
-        {/* {MenuOpen ? (
-          <div className="lg:hidden flex flex-col items-center">
-          {data.map((data) => (
-              <Link to={data.path}>
-              <div className="text-white flex flex-col items-center hover:flex">
-                <p className='text-[2rem]'>{data.icon}</p>
-                <p className=''>{data.info}</p>
-                <div className="w-full h-1 bg-white rounded-2xl hidden"></div>
-              </div>
-              </Link>
-            ))}
-          </div>
-        ) : null} */}
       </div>
+        {MenuOpen ? (
+            <div className="lg:hidden flex items-center justify-evenly bg-[#0F2484] border-t py-1">
+            {data.map((data) => (
+                <Link to={data.path}>
+                <div className="text-white flex flex-col items-center hover:flex">
+                  <p className='text-[2rem]'>{data.icon}</p>
+                  <p className=''>{data.info}</p>
+                  <div className="w-full h-1 bg-white rounded-2xl hidden"></div>
+                </div>
+                </Link>
+              ))}
+            </div>
+        ) : null}
     </>
   )
 }
