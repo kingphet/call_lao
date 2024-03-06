@@ -32,7 +32,12 @@ const data = [
 
 function NavUser() {
   const [MenuOpen, setMenuOpen] = useState(false)
-  const [MenuClose, setMenuClose] = useState(false)
+  // const [MenuClose, setMenuClose] = useState(false)
+
+  function Refresh(){
+    window.location.reload(false)
+  }
+
   // const [ChangeIcon, setChangeIcon] = useState(false)
 
   // const sideMunu = () => {
@@ -45,9 +50,9 @@ function NavUser() {
 
   return (
     <>
-      <div className={` ${MenuOpen ? "flex" : "hidden"} ${MenuClose ? "hidden" : null} flex-col h-screen w-64 z-40 items-start pt-10 gap-16 col-span-3 bg-[#0F2484] pl-10 fixed`}>
-        <div className="text-white text-[2rem]" onClick={() => setMenuClose(!MenuClose)}>
-          <p><IoArrowBack /></p>
+      <div className={` ${MenuOpen ? "flex" : "hidden"} flex-col h-screen w-64 z-40 items-start pt-10 gap-16 col-span-3 bg-[#0F2484] pl-10 fixed`}>
+        <div className="text-white text-[2rem]" onClick={() => setMenuOpen(!MenuOpen)} >
+          <p ><IoArrowBack /></p>
         </div>
         {data.map((data) => (
           <Link to={data.path}>
